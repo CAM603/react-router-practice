@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Shop from "./components/Shop";
-import Home from './components/Home';
+import Home from "./components/Home";
+import Item from "./components/ItemDetail";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import './App.css';
@@ -13,9 +14,10 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/shop" component={Shop} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route exact path="/shop" component={Shop} />
+          <Route path="/shop/:id" component={Item}/>
         </Switch>
       </div>
     </Router>
