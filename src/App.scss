@@ -1,35 +1,19 @@
 .App {
-  background : yellow;
-
-  .navigation {
-    display:  flex;
-    justify-content: space-between;
+  background: lightcyan;
+  .item {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    background: slategray;
-
-    .nav-links {
-      width: 20%;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+    height: 100vh;
+    .card {
+      width: 500px;
+      background: goldenrod;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        background: lightcyan;
+      }
     }
   }
-  .home {
-    background: blue;
-    display: flex;
-    justify-content: center;
-  }
-  .about {
-    background: blue;
-    display: flex;
-    justify-content: center;
-  }
-  .shop {
-    background: yellow;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-  }
+  
 }

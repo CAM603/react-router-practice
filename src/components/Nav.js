@@ -1,25 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//Styles
+import { Navbar, NavbarBrand, Nav } from 'reactstrap';
 
-function Nav() {
+
+function Navigation() {
     return (
     <nav className="navigation">
-        <h3>Logo</h3>
-        <ul className="nav-links">
-            <Link to="/about">
-                <li>About</li>
-            </Link>
-            <Link to="/shop">
-                <li>Shop</li>
-            </Link>
-            <Link to="/">
-                <li>Home</li>
-            </Link>
-        </ul>
+        <Navbar fixed="fixed" color="light">
+            <NavbarBrand>Logo</NavbarBrand>
+            <Nav>
+                    <Link to="/about">
+                        <p>About</p>
+                    </Link>
+                    <Link to="/shop">
+                        <p>Shop</p>
+                    </Link>
+                    <Link to="/">
+                        <p>Home</p>
+                    </Link>
+            </Nav>
+        </Navbar>
     </nav>
     );
 }
 
 
-export default Nav;
+export default Navigation;
