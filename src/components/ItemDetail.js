@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 
 function Item({match}) {
+    console.log(match)
     useEffect(() => {
         fetchItem()
         
-    }, [])
+    }, [match.params.id])
     
     const [item, setItem ] = useState({});
     const [pic, setPic] = useState()
@@ -21,8 +22,7 @@ function Item({match}) {
         setPic(item.sprites.front_default)
         setMoves(item.moves)
     }
-    console.log(moves)
-    console.log(item)
+    
     return (
     <div>
         <h1>{item.name}</h1>

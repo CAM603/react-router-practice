@@ -17,7 +17,7 @@ function Shop() {
         setItems(items.results);
     }
     return (
-    <div>
+    <div className="shop">
         {items.map((item, index) => (
             
             <h1 key={index}>
