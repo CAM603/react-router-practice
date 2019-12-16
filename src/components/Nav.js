@@ -13,6 +13,9 @@ function Nav() {
             <Link to="/shop">
                 <li>Shop</li>
             </Link>
+            <Link to="/">
+                <li>Home</li>
+            </Link>
         </ul>
     </nav>
     );
